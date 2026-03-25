@@ -1,0 +1,56 @@
+.cs-trigger {
+  width: 100%;
+  height: 44px;
+  padding: 0 40px 0 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--color-text);
+  transition:
+    border-color 0.15s,
+    box-shadow 0.15s;
+  outline: none;
+  position: relative;
+
+  &:not(&.cs-text-field){
+    cursor: pointer;
+  }
+
+  &:hover {
+    border-color: var(--color-border-hover);
+  }
+
+  &--open {
+    border-color: var(--color-border-hover);
+  }
+}
+.cs {
+  position: relative;
+  width: 100%;
+  user-select: none;
+
+  &--disabled {
+    opacity: 0.45;
+    pointer-events: none;
+  }
+
+  &-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  &-label {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  &-value {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}
