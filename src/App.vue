@@ -11,7 +11,7 @@ import DomainsExplorerGrid from '@/views/domains-explorer/DomainsExplorerGrid.vu
 </template>
 
 <style lang="scss">
-@import '@/assets/styles/app.scss';
+@use '@/assets/styles/app.scss';
 
 .app__container {
   min-height: 100vh;

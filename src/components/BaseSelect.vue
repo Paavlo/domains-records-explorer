@@ -187,7 +187,7 @@ onBeforeUnmount(() => {
   </div>
 </template>
 
-<style scoped>
+<style lang="scss">
 .cs-placeholder {
   color: var(--color-text);
 }
